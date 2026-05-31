@@ -1,6 +1,6 @@
 # mysterwolf studios — Skill Library
 **Last updated:** May 2026
-**Total skills:** 8
+**Total skills:** 10
 
 A collection of Claude Code skills for the mysterwolf studios app and consulting portfolio.
 Reference this file at the start of any session to know what skills are available.
@@ -63,6 +63,7 @@ session-sync   (update project summary and matrix — run in main Claude chat)
 |-------|----------|-------------|
 | `session-sync` | "update the summary", "update the matrix", "sync the project", "document what we did" | Run in main Claude chat (not Claude Code). Generates dated matrix entries for Unified Thread Matrix - Claude + updates ProjectConversationSummary .docx. Two outputs always. |
 | `sync-skills` | "sync skills", "update the skills repo", "push new skills", "I downloaded new skills" | Syncs local .skill files to this repo. Updates this README manifest. Never deletes existing skills. |
+| `sync-mas` | "sync inventory", "sync the sheet", "run the MAS sync", "pull new form submissions" | Fetches the Mobile Art Services Google Form response sheet (Formatted tab), maps rows to inventory CSV schema, translates French captions via Claude API, generates QR codes, appends new staged entries to public/data/inventory.csv. Runs fully without API key — flags French text for manual review if key absent. |
 
 ---
 
