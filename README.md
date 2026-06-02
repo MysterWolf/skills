@@ -1,6 +1,6 @@
 # mysterwolf studios — Skill Library
-**Last updated:** May 2026
-**Total skills:** 10
+**Last updated:** June 2026
+**Total skills:** 11
 
 A collection of Claude Code skills for the mysterwolf studios app and consulting portfolio.
 Reference this file at the start of any session to know what skills are available.
@@ -48,6 +48,7 @@ session-sync   (update project summary and matrix — run in main Claude chat)
 | Skill | Triggers | What it does |
 |-------|----------|-------------|
 | `edit-component` | "edit this component", "fix this bug", "add this feature", "update this screen" | Safely edits existing app features. Context first, invariants respected, test before commit, CLAUDE.md changelog updated after. Red flags that stop execution before damage is done. |
+| `update-portfolio` | "add [app] to the portfolio", "update the portfolio", "add this to mysterwolf.studio", "list [app] on the site", "update [app] status" | Adds or updates an app entry on mysterwolf.studio. Handles apps.json schema, STATUS_MAP registration for new statuses, deploy, and source commit. Includes full field reference and ordering rules. |
 
 ### 🔍 Context Skills
 
