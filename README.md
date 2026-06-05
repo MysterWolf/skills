@@ -73,10 +73,12 @@ session-sync   (update project summary and matrix — run in main Claude chat)
 | Repo | Type | Nickname | CLAUDE.md |
 |------|------|----------|-----------|
 | MysterWolf/dpad_pilot | Flutter/Android | `dpad` | ✓ |
+| MysterWolf/dpad_flame | Flutter/Android | `dpad-flame` | ✓ |
 | MysterWolf/ebike-app | React Native | `mission-control` | ✓ |
 | MysterWolf/mobile-art-services | React/Vite site | `mas` | ✓ |
 | MysterWolf/studios | React/Vite site | `mysterwolf` | ✓ |
 | MysterWolf/processmind | React/Vite site | `processmind` | ✓ |
+| MysterWolf/processmind-audit | React/Vite tool | `processmind-audit` | ✓ |
 | MysterWolf/skills | Skills library | `skills` | this file |
 
 ---
