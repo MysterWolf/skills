@@ -1,6 +1,6 @@
 # mysterwolf studios — Skill Library
 **Last updated:** June 2026
-**Total skills:** 11
+**Total skills:** 12
 
 A collection of Claude Code skills for the mysterwolf studios app and consulting portfolio.
 Reference this file at the start of any session to know what skills are available.
@@ -16,8 +16,9 @@ load-context [repo nickname]
 
 **Scaffold something new:**
 ```
-spinup-app     (new React Native app)
-spinup-site    (new website)
+spinup-app      (new React Native app)
+spinup-site     (new website)
+spinup-profile  (operator demo profile for CannaGuide/StashPass)
 ```
 
 **Edit existing code:**
@@ -42,6 +43,7 @@ session-sync   (update project summary and matrix — run in main Claude chat)
 |-------|----------|-------------|
 | `spinup-site` | "build a site", "create a website", "spin up a landing page" | Scaffolds a React/Vite site. Pattern A (editorial minimal) or Pattern B (gallery/portfolio). CSS variables, JSON data files, GitHub Pages deployment. Enhanced components: animated stats, marquee, noise texture, lightbox. |
 | `spinup-app` | "create a new app", "spin up an app", "scaffold a new app" | Scaffolds a React Native app. Expo bare workflow, Android-first. ThemeContext, MWS splash, navigation, AsyncStorage. Optional: BLE, GPS, Claude API chat, RevenueCat IAP, SQLite. Generates CLAUDE.md on completion. |
+| `spinup-profile` | "build a profile for", "create a store mockup", "make a demo for [store name]" | Generates a personalized operator profile mockup for CannaGuide/StashPass. Searches for real business data, applies category-specific color scheme, produces a demo-ready React component with functional links. Cannabis, coffee, barbershop, boutique palettes included. |
 
 ### ✏️ Edit Skills
 
