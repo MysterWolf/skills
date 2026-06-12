@@ -1,6 +1,7 @@
 # mysterwolf studios — Skill Library
 **Last updated:** June 2026
-**Total skills:** 12
+**Total skills:** 13
+**Default mobile framework: Flutter. React Native is legacy (Attenuate, Mission Control only).**
 
 A collection of Claude Code skills for the mysterwolf studios app and consulting portfolio.
 Reference this file at the start of any session to know what skills are available.
@@ -16,9 +17,10 @@ load-context [repo nickname]
 
 **Scaffold something new:**
 ```
-spinup-app      (new React Native app)
-spinup-site     (new website)
-spinup-profile  (operator demo profile for CannaGuide/StashPass)
+spinup-app-flutter   (new Flutter app — DEFAULT)
+spinup-app-rn        (new React Native app — LEGACY, existing projects only)
+spinup-site          (new website)
+spinup-profile       (operator demo profile for CannaGuide/StashPass)
 ```
 
 **Edit existing code:**
@@ -42,14 +44,15 @@ session-sync   (update project summary and matrix — run in main Claude chat)
 | Skill | Triggers | What it does |
 |-------|----------|-------------|
 | `spinup-site` | "build a site", "create a website", "spin up a landing page" | Scaffolds a React/Vite site. Pattern A (editorial minimal) or Pattern B (gallery/portfolio). CSS variables, JSON data files, GitHub Pages deployment. Enhanced components: animated stats, marquee, noise texture, lightbox. |
-| `spinup-app` | "create a new app", "spin up an app", "scaffold a new app" | Scaffolds a React Native app. Expo bare workflow, Android-first. ThemeContext, MWS splash, navigation, AsyncStorage. Optional: BLE, GPS, Claude API chat, RevenueCat IAP, SQLite. Generates CLAUDE.md on completion. |
+| `spinup-app-flutter` | "create a new app", "spin up an app", "scaffold a new app", "build a new mobile app" | **DEFAULT.** Scaffolds a Flutter app. Flutter stable, Dart, Provider, go_router, SharedPreferences. MWS splash in Flutter, ThemeData with MWS tokens. Optional: BLE, GPS, notifications, Claude API, RevenueCat IAP, SQLite. Reference: DPad Pilot. Generates CLAUDE.md. |
+| `spinup-app-rn` | "scaffold a React Native app", "spin up an Expo app" | **LEGACY — existing RN projects only.** Scaffolds a React Native app. Expo bare workflow, Android-first. ThemeContext, MWS splash, navigation, AsyncStorage. Optional: BLE, GPS, Claude API chat, RevenueCat IAP, SQLite. Generates CLAUDE.md. |
 | `spinup-profile` | "build a profile for", "create a store mockup", "make a demo for [store name]" | Generates a personalized operator profile mockup for CannaGuide/StashPass. Searches for real business data, applies category-specific color scheme, produces a demo-ready React component with functional links. Cannabis, coffee, barbershop, boutique palettes included. |
 
 ### ✏️ Edit Skills
 
 | Skill | Triggers | What it does |
 |-------|----------|-------------|
-| `edit-component` | "edit this component", "fix this bug", "add this feature", "update this screen" | Safely edits existing app features. Context first, invariants respected, test before commit, CLAUDE.md changelog updated after. Red flags that stop execution before damage is done. |
+| `edit-component` | "edit this component", "fix this bug", "add this feature", "update this screen" | Safely edits existing app features. Flutter default. Flutter apps: CannaGuide, DPad Pilot, DPad Flame, Meez, Spoke. RN legacy: Attenuate, Mission Control. Context first, invariants respected, test before commit, CLAUDE.md updated after. |
 | `update-portfolio` | "add [app] to the portfolio", "update the portfolio", "add this to mysterwolf.studio", "list [app] on the site", "update [app] status" | Adds or updates an app entry on mysterwolf.studio. Handles apps.json schema, STATUS_MAP registration for new statuses, deploy, and source commit. Includes full field reference and ordering rules. |
 
 ### 🔍 Context Skills
@@ -76,7 +79,10 @@ session-sync   (update project summary and matrix — run in main Claude chat)
 |------|------|----------|-----------|
 | MysterWolf/dpad_pilot | Flutter/Android | `dpad` | ✓ |
 | MysterWolf/dpad_flame | Flutter/Android | `dpad-flame` | ✓ |
-| MysterWolf/ebike-app | React Native | `mission-control` | ✓ |
+| MysterWolf/CannaGuide | Flutter/Android | `cannaguide` | ✓ |
+| MysterWolf/attenuate | React Native (legacy) | `attenuate` | ✓ |
+| MysterWolf/ebike-app | React Native (legacy) | `mission-control` | ✓ |
+| MysterWolf/stashpass-api | Fastify/TS API | `stashpass-api` | ✓ |
 | MysterWolf/mobile-art-services | React/Vite site | `mas` | ✓ |
 | MysterWolf/studios | React/Vite site | `mysterwolf` | ✓ |
 | MysterWolf/processmind | React/Vite site | `processmind` | ✓ |
@@ -96,7 +102,8 @@ update-context               ← document
 
 ### New project
 ```
-spinup-app                   ← React Native
+spinup-app-flutter           ← Flutter (DEFAULT)
+spinup-app-rn                ← React Native (legacy projects only)
 spinup-site                  ← website
 ```
 
