@@ -1,6 +1,6 @@
 # mysterwolf studios — Skills Library Context
-**Last updated:** 2026-06-12
-**Total skills:** 13
+**Last updated:** 2026-06-17
+**Total skills:** 14
 
 ## What This Is
 
@@ -13,7 +13,7 @@ how to scaffold apps, edit components, sync context, and manage the portfolio.
 
 - **Repo:** github.com/MysterWolf/skills (branch: main)
 - **Downloads mirror:** `~/Downloads/Skills/` — keep in sync with repo after any changes
-- **Total skills:** 13
+- **Total skills:** 14
 
 ## Skill Inventory
 
@@ -21,6 +21,7 @@ how to scaffold apps, edit components, sync context, and manage the portfolio.
 |-------|------|---------|
 | `spinup-app-flutter` | Build | **DEFAULT** — scaffold new Flutter app (Provider, go_router, MWS splash, ThemeData) |
 | `spinup-app-rn` | Build | LEGACY — scaffold React Native / Expo bare app (existing projects only) |
+| `ship-build` | Build | Commit, build APK, sideload all connected devices, push to GitHub, overwrite permanent `latest` release |
 | `spinup-site` | Build | Scaffold React/Vite site — Pattern A (editorial) or Pattern B (gallery) |
 | `spinup-profile` | Build | Generate operator demo profile for CannaGuide/StashPass |
 | `edit-component` | Edit | Safely edit existing app screens/components — Flutter default, RN legacy supported |

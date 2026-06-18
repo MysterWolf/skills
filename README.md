@@ -1,6 +1,6 @@
 # mysterwolf studios — Skill Library
 **Last updated:** June 2026
-**Total skills:** 13
+**Total skills:** 14
 **Default mobile framework: Flutter. React Native is legacy (Attenuate, Mission Control only).**
 
 A collection of Claude Code skills for the mysterwolf studios app and consulting portfolio.
@@ -46,6 +46,7 @@ session-sync   (update project summary and matrix — run in main Claude chat)
 | `spinup-site` | "build a site", "create a website", "spin up a landing page" | Scaffolds a React/Vite site. Pattern A (editorial minimal) or Pattern B (gallery/portfolio). CSS variables, JSON data files, GitHub Pages deployment. Enhanced components: animated stats, marquee, noise texture, lightbox. |
 | `spinup-app-flutter` | "create a new app", "spin up an app", "scaffold a new app", "build a new mobile app" | **DEFAULT.** Scaffolds a Flutter app. Flutter stable, Dart, Provider, go_router, SharedPreferences. MWS splash in Flutter, ThemeData with MWS tokens. Optional: BLE, GPS, notifications, Claude API, RevenueCat IAP, SQLite. Reference: DPad Pilot. Generates CLAUDE.md. |
 | `spinup-app-rn` | "scaffold a React Native app", "spin up an Expo app" | **LEGACY — existing RN projects only.** Scaffolds a React Native app. Expo bare workflow, Android-first. ThemeContext, MWS splash, navigation, AsyncStorage. Optional: BLE, GPS, Claude API chat, RevenueCat IAP, SQLite. Generates CLAUDE.md. |
+| `ship-build` | "ship the build", "release", "push and deploy" | Commits pending changes, builds the release APK, installs on all connected devices (USB + wireless ADB), pushes to GitHub, overwrites the permanent `latest` release with a fixed-name APK asset so the download URL never changes. Updates CLAUDE.md changelog. |
 | `spinup-profile` | "build a profile for", "create a store mockup", "make a demo for [store name]" | Generates a personalized operator profile mockup for CannaGuide/StashPass. Searches for real business data, applies category-specific color scheme, produces a demo-ready React component with functional links. Cannabis, coffee, barbershop, boutique palettes included. |
 
 ### ✏️ Edit Skills
